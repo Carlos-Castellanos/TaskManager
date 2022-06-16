@@ -1,0 +1,75 @@
+body {
+    /* background-image: url("https://swall.teahub.io/photos/small/152-1520643_sticky-notes-png-sticky-note-background-png.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: rgba(83, 146, 202, 0.545);
+
+}
+
+h3 {
+    color: rgb(63, 63, 210);
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    border: 1px solid #93c0f0;
+    height: 46rem;
+    width: 100%;
+}
+
+.list {
+    /* Initially, the left takes 3/4 width */
+    width: 80%;
+    min-width: 25%;
+    display: flex;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,0.59661865234375) 6%, rgba(9,121,120,1) 73%, rgba(9,97,121,1) 94%);}
+
+.list-head {
+    height: 50px;
+    width: 100%;
+    background-color: #93aac1;
+}
+
+.list-elem {
+    display: inline-flex;
+    justify-content: space-between;
+    /* align-content: space-around; */
+}
+
+.resizer {
+    background-color: #cbd5e0;
+    cursor: ew-resize;
+    height: 100%;
+    width: 4px;
+}
+
+.form {
+    flex: 1;
+    width: 20%;
+    min-width: 15%;
+    background: rgb(124,120,190);
+    background: linear-gradient(142deg, rgba(124,120,190,0.59661865234375) 6%, rgba(9,121,120,1) 49%, rgba(11,29,34,1) 94%);
+}
+
+.my-field {
+    margin-left: 10px;
+}
+
+#iImportant {
+    font-size: 22px;
+    cursor: pointer;
+    color: #666;
+}
+
+#iImportant.fas {
+    color: red;
+}
+
+
+.finish {
+    text-decoration: line-through;
+    color: red;
+}
