@@ -1,6 +1,6 @@
 function initR()
 {
-    console.log("hello");
+    // console.log("hello");
 // Query the element
 const resizer = document.getElementById('dragMe');
 const leftSide = resizer.previousElementSibling;

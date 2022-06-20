@@ -15,17 +15,20 @@ h3 {
 .main-content {
     display: flex;
     border: 1px solid #93c0f0;
-    height: 46rem;
-    width: 100%;
+    /* height: 46rem; */
+    /* width: 100%; */
 }
+
 /* TASK LIST--------------------------------------------------*/
 .list {
     /* Initially, the left takes 3/4 width */
     width: 80%;
     min-width: 25%;
+    height: 93vh;
     display: flex;
-    /* background: rgb(2,0,36); */
-    background: linear-gradient(90deg, rgba(2,0,36,0.59661865234375) 6%, rgba(9,121,120,1) 73%, rgba(9,97,121,1) 94%);}
+    background: rgb(184, 203, 203);
+    background: linear-gradient(142deg, rgba(184, 203, 203, 0.59661865234375) 6%, rgba(53, 177, 207, 0.6526410613073355) 49%, rgba(16, 81, 99, 0.9579631901588761) 94%);
+}
 
 .list-head {
     height: 50px;
@@ -33,36 +36,77 @@ h3 {
     background-color: #93aac1;
 }
 
-
-.task{
+#task-list{
 display: flex;
-align-items: center;
-background-color: #f8f8fa;
-border: 1px solid #ececf0;
-border-radius: 4px;
-padding: 7px 10px;
-margin: 0 20px;
-color: rgb(64,67,70);
+flex-direction: column;
+overflow-y: scroll;
+height: 80vh;
+  }
+
+.task {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8fa;
+    border: 1px solid #ececf0;
+    border-radius: 4px;
+    padding: 7px 10px;
+    margin: 0 20px;
+    color: rgb(64, 67, 70);
 }
 
-.task:hover{
-    background-color: #4b9cf7;
-    border: 1px solid #3c85d7;
-    color: rgb(64,67,70);
-    }
+.task:hover {
+    background-color: #dfe86069;
+    color: rgb(64, 67, 70);
+}
 
-.task h4{
+.task h4 {
     flex: 3;
     color: unset;
     text-align: left;
 }
-.task label{
-    flex: 1;
-}
-.task .dates{
+
+.task label {
     flex: 1;
 }
 
+.task .dates {
+    flex: 1;
+}
+
+.status-0 {
+    color: rgba(90, 61, 61, 0.588);
+    border: 2px solid rgba(0, 4, 6, 0.878);
+    border-left-width: 8px;
+    margin-top: 5px;
+}
+
+.status-1 {
+    color: rgba(90, 61, 61, 0.588);
+    border: 2px solid blue;
+    border-left-width: 8px;
+    margin-top: 5px;
+}
+
+.status-3 {
+    color: rgba(90, 61, 61, 0.588);
+    border: 2px solid rgb(188, 42, 49);
+    border-left-width: 8px;
+    margin-top: 5px;
+}
+
+.status-6 {
+    color: rgba(90, 61, 61, 0.588);
+    border: 2px solid rgba(10, 69, 10, 0.479);
+    border-left-width: 8px;
+    margin-top: 5px;
+}
+
+.status-9 {
+    color: rgba(90, 61, 61, 0.588);
+    border: 2px solid rgba(132, 39, 9, 0.89);
+    border-left-width: 8px;
+    margin-top: 2px;
+}
 
 /*Split dynamic --------------------------------------------------*/
 .resizer {
@@ -71,13 +115,14 @@ color: rgb(64,67,70);
     height: 100%;
     width: 4px;
 }
+
 /* REGISTER TASK--------------------------------------------------*/
 .form {
     flex: 1;
-    width: 20%;
-    min-width: 15%;
-    background: rgb(124,120,190);
-    background: linear-gradient(142deg, rgba(124,120,190,0.59661865234375) 6%, rgba(9,121,120,1) 49%, rgba(11,29,34,1) 94%);
+    width: 25%;
+    min-width: 20%;
+    background: rgb(124, 120, 190);
+    background: linear-gradient(142deg, rgba(124, 120, 190, 0.59661865234375) 6%, rgba(9, 121, 120, 1) 49%, rgba(11, 29, 34, 1) 94%);
 }
 
 .my-field {
